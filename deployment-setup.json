@@ -3,11 +3,8 @@
   "Description" : "aws basic config required to deploy resources",
 
   "Resources" : {
-    "S3Bucket" : {
-      "Type" : "AWS::S3::Bucket",
-      "Properties" : {
-        "BucketName" : "code-deploy"
-      }
+    "CodeDeployS3Bucket" : {
+      "Type" : "AWS::S3::Bucket"
     }
   }
 }

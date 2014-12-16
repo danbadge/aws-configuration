@@ -19,7 +19,7 @@
         "VpcId" : { "Ref" : "VPC" },
         "CidrBlock" : "10.0.0.0/24",
         "AvailabilityZone" : "eu-west-1a",
-        "Tags" : [ {"Key" : "Name", "Value" : "basic-network-config"}
+        "Tags" : [ {"Key" : "Name", "Value" : "basic-network-config"} ]
       }
     },
 

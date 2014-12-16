@@ -8,7 +8,7 @@
       "Type" : "AWS::EC2::VPC",
       "Properties" : {
         "CidrBlock" : "10.0.0.0/16",
-        "Tags" : [ {"Key" : "Name", "Value" : "devops-part-two"} ]
+        "Tags" : [ {"Key" : "Name", "Value" : "basic-network-config"} ]
       }
     },
 
@@ -19,14 +19,14 @@
         "VpcId" : { "Ref" : "VPC" },
         "CidrBlock" : "10.0.0.0/24",
         "AvailabilityZone" : "eu-west-1a",
-        "Tags" : [ {"Key" : "Name", "Value" : "devops-part-two"} ]
+        "Tags" : [ {"Key" : "Name", "Value" : "basic-network-config"}
       }
     },
 
     "InternetGateway" : {
       "Type" : "AWS::EC2::InternetGateway",
       "Properties" : {
-        "Tags" : [ {"Key" : "Name", "Value" : "devops-part-two"}]
+        "Tags" : [ {"Key" : "Name", "Value" : "basic-network-config"}]
       }
     },
 
@@ -42,7 +42,7 @@
       "Type" : "AWS::EC2::RouteTable",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
-        "Tags" : [ { "Key" : "Name", "Value" : "devops-part-two"} ]
+        "Tags" : [ { "Key" : "Name", "Value" : "basic-network-config"} ]
       }
     },
 
@@ -68,7 +68,7 @@
       "Type" : "AWS::EC2::NetworkAcl",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
-        "Tags" : [ { "Key" : "Name", "Value" : "devops-part-two" } ]
+        "Tags" : [ { "Key" : "Name", "Value" : "basic-network-config" } ]
       }
     },
 
@@ -117,7 +117,7 @@
           "ToPort" : "22",
           "CidrIp" : "0.0.0.0/0"
         }],
-        "Tags" : [ { "Key" : "Name", "Value" : "devops-part-two" } ]
+        "Tags" : [ { "Key" : "Name", "Value" : "basic-network-config" } ]
       }
     }
   }

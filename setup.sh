@@ -1,2 +1,2 @@
-aws cloudformation create-stack --stack-name network-stack --template-body "file://./network.json"
-aws cloudformation create-stack --stack-name deployment-setup --template-body "file://./deployment-setup.json"
+aws cloudformation create-stack --stack-name basic-api-stack --template-body "file://./basic-api-stack.json"
+#aws cloudformation create-stack --stack-name deployment-setup --template-body "file://./deployment-setup.json"

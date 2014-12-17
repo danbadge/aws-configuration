@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description" : "aws basic network configuration",
+  "Description" : "Full stack required to run basic-api",
 
   "Resources" : {
 
